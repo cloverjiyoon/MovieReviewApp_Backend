@@ -58,7 +58,7 @@ export default class ReviewsController{
                 res.status(400).json({ error })
             }
 
-            if(reviewResponse.modifiedCount === 0) { // if not updated
+            if(reviewResponse.modifiedCount === 0) { // if not updated ==> error occured
                 throw new Error(
                     "Error - there is no update"
                 )
@@ -74,7 +74,7 @@ export default class ReviewsController{
     static async apiDeleteReview(req, res, next){
         try{
             // getting from Insomnia 
-            const reviewId = req.body.review_id;
+            const reviewId = req.body.review_id;         // NOT req.body.review_id;
             const userId = req.body.user_id;
             console.log(reviewId);
             const reviewResponse = await ReviewsDAO.deleteReview(
