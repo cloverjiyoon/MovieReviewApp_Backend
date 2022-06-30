@@ -41,13 +41,13 @@ export default class ReviewsController{
         try {
             // getting from Insomnia 
             const reviewId = req.body.review_id;
-            const userId = req.body.user_id;
+            // const userId = req.body.user_id;
             const review = req.body.review;
             const date = new Date()
 
             const reviewResponse = await ReviewsDAO.updateReview(
                 reviewId,
-                userId,
+                req.body.user_id,
                 review,
                 date
             )
@@ -74,7 +74,8 @@ export default class ReviewsController{
     static async apiDeleteReview(req, res, next){
         try{
             // getting from Insomnia 
-            const reviewId = req.body.review_id;         // NOT req.body.review_id;
+            // const reviewId = req.body.review_id;       
+            const reviewId = req.query.id
             const userId = req.body.user_id;
             console.log(reviewId);
             const reviewResponse = await ReviewsDAO.deleteReview(
@@ -82,7 +83,13 @@ export default class ReviewsController{
                 userId
             )
 
-            res.json({ status: "success" })
+            var { error } = reviewResponse
+            if(error) {
+                // 400 is caused by user
+                res.status(500).json({ error })
+            } else{
+                res.json({ status: "success" })
+            }
 
         } catch(e){
             res.status(500).json({ error: e.message })
