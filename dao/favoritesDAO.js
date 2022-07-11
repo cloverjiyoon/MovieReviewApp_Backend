@@ -38,6 +38,7 @@ export default class FavoritesDAO{
                 _id: id
             });
             const favorites = await cursor.toArray();
+            console.log(favorites);
             console.log(favorites[0]);
             return favorites[0];
         } catch(e){
