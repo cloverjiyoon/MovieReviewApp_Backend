@@ -22,5 +22,12 @@ router
 .get(FavoritesController.apiGetFavorites);
 
 
+// check <services> directory <favorites.js> in Frontend for route
+router
+.route("/favoritesCard/:userId")
+.get(FavoritesController.apiGetFavoritesCards);
+
+
+
 
 export default router;

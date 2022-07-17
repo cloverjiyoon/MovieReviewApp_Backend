@@ -46,4 +46,5 @@ export default class FavoritesDAO{
             throw e;
         }
     }
+   
 }
