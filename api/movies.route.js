@@ -23,9 +23,9 @@ router
 
 
 // check <services> directory <favorites.js> in Frontend for route
-router
-.route("/favoritesCard/:userId")
-.get(FavoritesController.apiGetFavoritesCards);
+// router
+// .route("/favoritesCard/:userId")
+// .get(FavoritesController.apiGetFavoritesCards);
 
 
 
