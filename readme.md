@@ -4,11 +4,11 @@
 ---
 - Set up the project file tree with the backend directory and subdirectories
 
- ![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/Jiyoon_Clover_Jeong-HWimg/blob/main/FileTree.png)
+ ![Image Link](https://github.com/CloverJiyoon/MovieApp_Image/blob/main/FileTree.png)
 
 - Set up the MongoDB and import movie database from dump folder
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/Jiyoon_Clover_Jeong-HWimg/blob/main/MongoDB.png)
+![Image Link](https://github.com/CloverJiyoon/MovieApp_Image/blob/main/MongoDB.png)
 
 ---
 
@@ -17,13 +17,13 @@
 ---
 - MongoDB Compass interface with a review added
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/Jiyoon_Clover_Jeong-HWimg/blob/main/POSTrequest.png)
+![Image Link](https://github.com/CloverJiyoon/MovieApp_Image/blob/main/POSTrequest.png)
 
 - Insomnia interface with a successful response for both the PUT and DELETE requests
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/Jiyoon_Clover_Jeong-HWimg/blob/main/PUTrequest.png)
+![Image Link](https://github.com/CloverJiyoon/MovieApp_Image/blob/main/PUTrequest.png)
 
-![Image Link](https://github.ccs.neu.edu/NEU-CS5610-SU22/Jiyoon_Clover_Jeong-HWimg/blob/main/DELETErequest.png)
+![Image Link](https://github.com/CloverJiyoon/MovieApp_Image/blob/main/DELETErequest.png)
 
 ---
 
